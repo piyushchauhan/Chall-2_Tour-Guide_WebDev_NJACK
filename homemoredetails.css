@@ -1,0 +1,15 @@
+    div#home {
+        position: absolute;
+        top: 60px;
+        right: 31px;
+        height: 20px;
+        width: 100px;
+    }
+    
+    div#moredetails {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        width: 100px;
+    }

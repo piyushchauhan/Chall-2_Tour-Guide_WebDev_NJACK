@@ -1,0 +1,143 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+div.main {
+    height: 620px;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #000000;
+}
+
+figure.snip1321 {
+    font-family: 'Raleway', Arial, sans-serif;
+    /* Setting fonts */
+    position: absolute;
+    /* Position will be relative to other elements nearby */
+    float: left;
+    /*Floating with respect to the contents around it*/
+    overflow: hidden;
+    /*When contents inside the element exeed its size they go hidden or scroll bar appears*/
+    margin: 10px 1%;
+    min-width: 230px;
+    /* This prevents the value of the width property from becoming smaller than min-width. */
+    max-width: 450px;
+    /* This prevents the value of the width property from becoming larger than max-width. */
+    width: 100%;
+    height: 250px;
+    color: #000000;
+    text-align: center;
+    -webkit-perspective: 50em;
+    /* Safari browser support */
+    perspective: 50em;
+    /* The perspective property defines how many pixels a 3D element is placed from the view. This property allows you to change the perspective on how 3D elements are viewed. */
+    background: #000000;
+    /* Background color of figure box */
+    border: 2px thick #ffffff;
+}
+
+figure.snip1321 * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    /* include the padding in element's total width and height. */
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    /* Animations(flipping) fast at the beginning, slow at the end */
+}
+
+figure.snip1321 img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure.snip1321 figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    /* Margins */
+    position: absolute;
+    opacity: 0;
+    /* Tile invisible */
+    z-index: 1;
+    /* Depth */
+}
+
+figure.snip1321 h2, figure.snip1321 h4 {
+    margin: 0;
+    /* All 4 margins are 0 */
+}
+
+figure.snip1321 h2 {
+    font-weight: 600;
+    /* Boldneess */
+}
+
+figure.snip1321 h4 {
+    font-weight: 400;
+    /* Boldneess */
+    text-transform: uppercase;
+    /* Converts all text into uppercase */
+}
+
+figure.snip1321 i {
+    font-size: 32px;
+}
+
+figure.snip1321:after {
+    background-color: #ffffff;
+    /* BAckgroud of the tile */
+    position: absolute;
+    content: "";
+    display: block;
+    /* Creates a block */
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    /* Margins */
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /* Animations */
+    opacity: 0;
+    /* Tile invisible */
+}
+
+figure.snip1321 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* Positioning */
+    position: absolute;
+    z-index: 1;
+    /* Depth */
+}
+
+figure.snip1321:hover figcaption, figure.snip1321.hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* Animation to rotate */
+    opacity: 1;
+    /* Tile visibility Intensity */
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    /* Time Duration for transition */
+}
+
+figure.snip1321:hover:after, figure.snip1321.hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    /* Rotate animation */
+    opacity: 0.9;
+    /* Tile visibility Intensity */
+}

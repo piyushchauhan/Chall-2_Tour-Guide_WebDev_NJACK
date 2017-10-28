@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Essel World</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body background="background.jpg">
+  <a href="Homepage.html">
+    <div id="home" class="hvr-shutter-in-vertical" align=right>Home</div>
+  </a>
+  <a href="">
+    <div id="moredetails" class="hvr-shutter-in-vertical" align=right>More Details</div>
+  </a>
+  <div id="gradient" />
+  <div id="page">
+    <div id="logo">
+      <h1>Essel World</h1>
+    </div>
+
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1.5s ease;
+        background-color: #000000;
+      }
+
+      .container:hover .overlay {
+        opacity: .9;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%, -10%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .hvr-shutter-in-vertical {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        background: #2098D1;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+      }
+
+      .hvr-shutter-in-vertical:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        /* Depth */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* Margin */
+        background: #e1e1e1;
+        /* Background Color */
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        /* Animations */
+      }
+
+      .hvr-shutter-in-vertical:hover,
+      .hvr-shutter-in-vertical:focus,
+      .hvr-shutter-in-vertical:active {
+        color: white;
+      }
+
+      .hvr-shutter-in-vertical:hover:before,
+      .hvr-shutter-in-vertical:focus:before,
+      .hvr-shutter-in-vertical:active:before {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+      }
+
+      div#home {
+        position: absolute;
+        top: 60px;
+        right: 31px;
+        height: 20px;
+        width: 100px;
+      }
+
+      div#moredetails {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        width: 100px;
+      }
+
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1.5s ease;
+        background-color: #000000;
+      }
+
+      .container:hover .overlay {
+        opacity: .9;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%, -10%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    </style>
+    <p>
+
+      <div class="container">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/78/a5/c3/esselworld.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">EsselWorld is an amusement located in Gorai, Mumbai and established in 1989. The park is owned by Pan India Paryatan
+            Pvt. Ltd. (PIPPL). EsselWorld along with its counterparts, Water Kingdom are stretched over 64 acres of land.
+            Together, they are recognised as one of the largest Amusement And Water Park .EsselWorld is one of the largest
+            amusement park in the country, along with Adlabs Imagica. It draws in an estimated 1.8 million visitors annually,
+            of which approximately 300,000 are students
+
+
+
+          </div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div id="nav">
+        <ul>
+          <li><a href="#/home.html">Home</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Gateway_of_India">More Details</a></li>
+
+        </ul>
+      </div>
+    </p>
+  </div>
+  <div id="footer">
+    <p>
+
+    </p>
+  </div>
+  </div>
+</body>
+
+</html>

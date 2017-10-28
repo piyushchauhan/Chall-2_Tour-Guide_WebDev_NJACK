@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body background="background.jpg">
+    <a href="Homepage.html">
+        <div id="home" class="hvr-shutter-in-vertical" align=right>Home</div>
+    </a>
+    <a href="">
+        <div id="moredetails" class="hvr-shutter-in-vertical" align=right>More Details</div>
+    </a>
+    <div id="gradient" />
+    <div id="page">
+        <div id="logo">
+
+            <h1>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h1>
+        </div>
+
+        <style>
+            .hvr-shutter-in-vertical {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px transparent;
+                position: relative;
+                background: #2098D1;
+                -webkit-transition-property: color;
+                transition-property: color;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
+
+            .hvr-shutter-in-vertical:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                /* Depth */
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                /* Margin */
+                background: #e1e1e1;
+                /* Background Color */
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+                -webkit-transform-origin: 50%;
+                transform-origin: 50%;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+                /* Animations */
+            }
+
+            .hvr-shutter-in-vertical:hover,
+            .hvr-shutter-in-vertical:focus,
+            .hvr-shutter-in-vertical:active {
+                color: white;
+            }
+
+            .hvr-shutter-in-vertical:hover:before,
+            .hvr-shutter-in-vertical:focus:before,
+            .hvr-shutter-in-vertical:active:before {
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+            }
+
+            div#home {
+                position: absolute;
+                top: 60px;
+                right: 31px;
+                height: 20px;
+                width: 100px;
+            }
+
+            div#moredetails {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                height: 20px;
+                width: 100px;
+            }
+
+            .container {
+                position: relative;
+                width: 50%;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 1.5s ease;
+                background-color: #000000;
+            }
+
+            .container:hover .overlay {
+                opacity: .9;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                transform: translate(-10%, -10%);
+                -ms-transform: translate(-50%, -50%);
+                text
+            }
+        </style>
+        <p>
+
+            <div class="container">
+                <img src="http://s3.india.com/travel/wp-content/uploads/2016/04/Mumbai-Chhatrapati-Shivaji-Maharaj-Vastu-Sangralaya.jpg"
+                    alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">The Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (translation: 'king Shivaji object collection'), abbreviated
+                        CSMVS and formerly named the Prince of Wales Museum of Western India, is the main museum in Mumbai,
+                        Maharashtra. It was founded in the early years of the 20th century by prominent citizens of Mumbai,
+                        with the help of the government, to commemorate the visit of Edward VIII, who was Prince of Wales
+                        at the time. It is located in the heart of South Mumbai near the Gateway of India. The museum was
+                        renamed in the 1990s or early 2000s after Shivaji, the founder of Maratha Empire. Prior to this,
+                        Dr. Bhau Daji Lad Museum, formerly the Victoria and Albert Museum, was established in 1855, just
+                        opposite Byculla railway station, Mumbai. This museum is located inside the Victoria Garden, now
+                        called Jijamata Udyaan.
+
+
+
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p>
+            <a href="Homepage.html">
+                <div id="home" class="hvr-shutter-in-vertical" align=right>Home</div>
+            </a>
+            <a href="">
+                <div id="moredetails" class="hvr-shutter-in-vertical" align=right>More Details</div>
+            </a>
+
+    </div>
+    </p>
+    </div>
+    <div id="footer">
+        <p>
+
+        </p>
+    </div>
+    </div>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
